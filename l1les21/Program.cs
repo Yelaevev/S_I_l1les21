@@ -22,7 +22,7 @@ namespace Level1Space
             for (int i = 0; i < TransInput.Length; i++)
             {
                 //int temp;
-                for (int j = 0; j <TransInput.Length - i-1; j++)
+                for (int j = 0; j <=TransInput.Length - i-1; j++)
                 {
                     int k = i + j;
                   int  temp = MaxValue(TransInput, j, k);
@@ -46,7 +46,7 @@ namespace Level1Space
                 sum = sum + rez[i];
             }
 
-           // Console.WriteLine(sum);
+            Console.WriteLine(sum);
             if (sum % 2 == 0) key = true;
             if (A.Length != N) key = false; 
 
@@ -57,6 +57,7 @@ namespace Level1Space
 
         //static void Main(string[] args)
         //{
+        //    int[] rech = new int[] { 1, 2, 1, 7, 2, 4, 3, 1, 5, 1, 2, 1, 6, 1, 2 };
         //    int c = MaxValue(new int[] { 11, 0, 35, 5, 6 }, 0, 1);
         //    Console.WriteLine(c);
         //    int[] test = Transform(new int[] { 2, 8, 4, 2, 6 });
@@ -66,7 +67,7 @@ namespace Level1Space
         //    int[] test2 = Transform(test);
         //    foreach (int t in test2) Console.Write(t + " ");
         //    Console.WriteLine();
-        //    bool d = TransformTransform(new int[] { 2, 8, 4, 2, 6 }, 5);
+        //    bool d = TransformTransform(rech, rech.Length);
         //    Console.WriteLine(d);
         //}
     }
