@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace l1les21
+namespace Level1Space
 {
-    
-    class Program
+    public static class Level1
     {
         public static int MaxValue(int[] ArrInput,int begin,int end)
         {
@@ -50,7 +46,7 @@ namespace l1les21
                 sum = sum + rez[i];
             }
 
-            Console.WriteLine(sum);
+           // Console.WriteLine(sum);
             if (sum % 2 == 0) key = true;
 
             return key;
@@ -60,16 +56,16 @@ namespace l1les21
 
         //static void Main(string[] args)
         //{
-        //    int c = MaxValue(new int[]{ 11,0,35,5,6},0,1);
+        //    int c = MaxValue(new int[] { 11, 0, 35, 5, 6 }, 0, 1);
         //    Console.WriteLine(c);
         //    int[] test = Transform(new int[] { 2, 8, 4, 2, 6 });
         //    Console.WriteLine("1, 7, 3, 5, 6 ");
-        //    foreach (int t in test) Console.Write(t +", ");
+        //    foreach (int t in test) Console.Write(t + ", ");
         //    Console.WriteLine();
         //    int[] test2 = Transform(test);
         //    foreach (int t in test2) Console.Write(t + " ");
         //    Console.WriteLine();
-        //    bool d = TransformTransform(new int[] { 2, 8, 4, 2, 6 },5);
+        //    bool d = TransformTransform(new int[] { 2, 8, 4, 2, 6 }, 5);
         //    Console.WriteLine(d);
         //}
     }
