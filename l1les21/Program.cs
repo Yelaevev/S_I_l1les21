@@ -48,6 +48,7 @@ namespace Level1Space
 
            // Console.WriteLine(sum);
             if (sum % 2 == 0) key = true;
+            if (A.Length != N) key = false; 
 
             return key;
 
